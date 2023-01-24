@@ -1,0 +1,17 @@
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.width__80 {
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .width__80 {
+    width: 80%;
+
+    justify-content: center !important;
+  }
+}

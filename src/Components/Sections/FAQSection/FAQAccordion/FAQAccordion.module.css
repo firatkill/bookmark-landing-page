@@ -1,0 +1,69 @@
+.container {
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: Center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+.QSection {
+  border-top: 1px solid hsl(229, 8%, 60%);
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.QTitle h4 {
+  opacity: 0.8;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.QAnswer p {
+  color: hsl(229, 8%, 60%);
+}
+.QTitle:hover h4 {
+  color: hsl(0, 94%, 66%);
+}
+.QTitle {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.upIcon {
+  color: hsl(0, 94%, 66%);
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.downIcon {
+  color: hsl(231, 69%, 60%);
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.QAnswer[status="active"] {
+  max-height: 200px;
+
+  transition: max-height 0.5s ease-out;
+}
+.QAnswer[status="disabled"] {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+.QAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+  margin: 0;
+  padding: 0;
+}
+.QSection:last-of-type {
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}

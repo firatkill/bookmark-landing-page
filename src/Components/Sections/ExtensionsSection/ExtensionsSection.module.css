@@ -1,0 +1,41 @@
+.ExtensionsSectionContainer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+.textContent {
+  width: 60%;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .textContent {
+    width: 90%;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardFirefox {
+    margin-top: 1rem !important;
+  }
+  .cardContainer .cardOpera {
+    margin-top: 1rem !important;
+  }
+}
+.textContent p {
+  color: hsl(229, 8%, 60%);
+}
+.cardContainer {
+  display: flex;
+  width: 120%;
+  align-items: center;
+  justify-content: space-around;
+}
+.cardContainer .cardFirefox {
+  margin-top: 4rem;
+}
+.cardContainer .cardOpera {
+  margin-top: 8rem;
+}

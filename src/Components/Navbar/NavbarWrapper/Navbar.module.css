@@ -1,0 +1,14 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.loginButton {
+  margin-left: 1rem;
+}
+.hamburger {
+  cursor: pointer;
+  padding: 0.5rem;
+}

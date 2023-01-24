@@ -1,0 +1,30 @@
+.introSectionContainer {
+  margin-top: 3rem !important;
+  align-items: center !important;
+  overflow: visible !important;
+}
+@media screen and (max-width: 768px) {
+  .introSectionContainer {
+    flex-direction: column !important;
+  }
+  .textContent {
+    width: 90% !important;
+    margin-bottom: 2rem;
+    text-align: center !important;
+    align-items: center !important;
+  }
+}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 40%;
+}
+.textContent h1 {
+  color: hsl(229, 31%, 21%);
+}
+.textContent p {
+  color: hsl(229, 8%, 60%);
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,33 @@
+.introSectionImageContainer {
+  width: 35vw;
+  margin: auto;
+  position: relative;
+  overflow: visible;
+}
+.introSectionImageContainer img {
+  width: 50vw;
+  min-width: 400px;
+}
+.bgLine {
+  width: 1000% !important;
+  background-color: blue;
+  height: 15vw;
+  min-height: 150px;
+  position: absolute;
+  top: 45%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .introSectionImageContainer {
+    display: flex;
+    align-items: center !important ;
+    justify-content: center !important;
+  }
+  .bgLine {
+    top: 150px !important;
+
+    left: 30% !important;
+  }
+}
